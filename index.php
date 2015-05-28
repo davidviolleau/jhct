@@ -2,138 +2,102 @@
 defined('_JEXEC') or die;
 ?>
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
 	<jdoc:include type="head" />
-	<? JHtml::_('bootstrap.framework') ?>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="/templates/HandCode/css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<link href="/templates/HandCode/css/bootstrap-responsive.min.css" rel="stylesheet">
-	<link href="/templates/HandCode/css/style.css" rel="stylesheet">
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-	<link href="http://fonts.googleapis.com/css?family=Federo" rel="stylesheet" type="text/css">
-	
-</head>
-<body data-spy="scroll" data-target=".bs-docs-sidebar">
-<?php include_once("analyticstracking.php") ?>
-<!-- NAVBAR
-================================================== -->
-<div class="navbar-wrapper">
-	<!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
-	<div class="container">
-		<div class="navbar">
-			<div class="navbar-inner">
-				<!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="brand" href="/">Trent & Tara</a>
-				<!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
-				<div class="nav-collapse collapse">
-					<jdoc:include type="modules" name="menu" style="none" />
-				</div><!--/.nav-collapse -->
-			</div><!-- /.navbar-inner -->
-		</div><!-- /.navbar -->
-	</div> <!-- /.container -->
-</div><!-- /.navbar-wrapper -->
-<!-- Carousel
-================================================== -->
-<div id="myCarousel" class="carousel slide">
-	<div class="carousel-inner">
-		<div class="car item">
-			<img src="../templates/HandCode/img/slide-01.jpg" alt="" class="carouselimg">
-		</div>
-		<div class="car item">
-			<img src="../templates/HandCode/img/slide-02.jpg" alt="" class="carouselimg">
-		</div>
-		<div class="car item">
-			<img src="../templates/HandCode/img/slide-03.jpg" alt="" class="carouselimg">
-		</div>
-		<div class="car item">
-			<img src="../templates/HandCode/img/slide-04.jpg" alt="" class="carouselimg">
-		</div>
-		<div class="car item">
-			<img src="../templates/HandCode/img/slide-06.jpg" alt="" class="carouselimg">
-		</div>
-		<div class="car item">
-			<img src="../templates/HandCode/img/slide-07.jpg" alt="" class="carouselimg">
-		</div>
-		<div class="car item">
-			<img src="../templates/HandCode/img/slide-08.jpg" alt="" class="carouselimg">
-		</div>
-		<div class="car item">
-			<img src="../templates/HandCode/img/slide-09.jpg" alt="" class="carouselimg">
-		</div>
-		<div class="car item">
-			<img src="../templates/HandCode/img/slide-10.jpg" alt="" class="carouselimg">
-		</div>
-		<div class="car item">
-			<img src="../templates/HandCode/img/slide-11.jpg" alt="" class="carouselimg">
-		</div>
-		<div class="car item">
-			<img src="../templates/HandCode/img/slide-12.jpg" alt="" class="carouselimg">
-		</div>
-	</div>
-</div><!-- /.carousel -->
-<!-- main container -->
-<div id="mainwrap">
-<div class='container'>
-	<!-- mid container - includes main content area and left/right sidebars -->
-	<div class='row'>
-		<!-- determine module sizes -->
-		<? if ($this->countModules('left') and $this->countModules('right'))
-				{$x=2; $y=6; $z=4;}
-			else if ($this->countModules('right'))
-				{$x=0; $y=7; $z=5;}
-			else
-				{$x=0; $y=12; $z=0;}
-		?>
-		<!-- /determine module sizes -->
-		<!-- left sidebar -->
-		<? if ($x>0) : ?>
-			<div class='span<?echo $x;?> bs-docs-sidebar' id='leftness'>
-				<jdoc:include type="modules" name="left" style="none" />
-			</div>
-		<? endif; ?>
-		<!-- /left sidebar -->
-		<!-- articles -->
-		<div class='span<?echo $y;?>'>
-			<jdoc:include type="message" />
-			<jdoc:include type="component" />
-			</div>
-		<!-- /articles -->
-		<!-- right<body onload="mymessage()"> sidebar -->
-		<? if ($z>0) : ?>
-			<div class='span<?echo $z;?>' id='rightness'>
-				<jdoc:include type="modules" name="right" style="none" />
-			</div>
-		<? endif; ?>
-	</div>
-</div>
-</div>
-<script>
-!function ($) {
-	$('.car').eq(Math.floor((Math.random() * $('.car').length))).addClass("active");
-$(window).bind("load", function() {
-		var $howhigh = $( "#myCarousel" ).height();
-		// carousel
-		$('#myCarousel').carousel({pause: "false" , interval: 6000})
-		// side bar
-		$('.bs-docs-sidenav').affix({
-			offset: { 
-				top: $howhigh
-			}
-		});
-		// to top scrolling
-		$("a[href='#main']").click(function() {
-			$("html, body").animate({ scrollTop: 0 }, "slow");
-			return false;
-		});
-});
-}(window.jQuery)
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
-</script>
-</body>
+    <title>Theme Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/templates/HandCode/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="/templates/HandCode/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/templates/HandCode/css/theme.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="/templates/HandCode/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body role="document">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Logo CPT</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <jdoc:include type="modules" name="menu" style="none" />
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+	<div class="page-header">
+        <h1>Carousel</h1>
+      </div>
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img data-src="holder.js/1140x500/auto/#777:#555/text:First slide" alt="First slide">
+          </div>
+          <div class="item">
+            <img data-src="holder.js/1140x500/auto/#666:#444/text:Second slide" alt="Second slide">
+          </div>
+          <div class="item">
+            <img data-src="holder.js/1140x500/auto/#555:#333/text:Third slide" alt="Third slide">
+          </div>
+        </div>
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+		<jdoc:include type="message" />
+		<jdoc:include type="component" />
+      </div>
+    </div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="/templates/HandCode/js/bootstrap.min.js"></script>
+    <script src="/templates/HandCode/js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/templates/HandCode/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
 </html>

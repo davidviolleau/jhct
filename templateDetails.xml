@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="3.0" type="template">
+<extension version="3.4" type="template">
         <name>HandCode</name>
-        <creationDate>2013-04-12</creationDate>
+        <creationDate>2015-05-26</creationDate>
         <author>Trent</author>
-        <authorEmail>trent_03@msn.com</authorEmail>
-        <authorUrl>http://www.trentandtara.com</authorUrl>
-        <copyright>Trent 2013</copyright>
+        <authorEmail>tjschaller@gmail.com</authorEmail>
+        <authorUrl>http://www.eglisechristpourtous.org</authorUrl>
+        <copyright>Trent 2015</copyright>
         <license>GNU/GPL</license>
         <version>1.0.0</version>
-        <description>My Hand Code Template</description>
+        <description>Hand Code Template</description>
         <files>
                 <filename>index.php</filename>
 				<folder>css</folder>
