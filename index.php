@@ -16,16 +16,16 @@ defined('_JEXEC') or die;
     <title>Theme Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/templates/HandCode/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/templates/jhct/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap theme -->
-    <link href="/templates/HandCode/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/templates/jhct/css/bootstrap-theme.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/templates/HandCode/css/theme.css" rel="stylesheet">
+    <link href="/templates/jhct/css/theme.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="/templates/HandCode/js/ie-emulation-modes-warning.js"></script>
+    <script src="/templates/jhct/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -95,9 +95,9 @@ defined('_JEXEC') or die;
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="/templates/HandCode/js/bootstrap.min.js"></script>
-    <script src="/templates/HandCode/js/docs.min.js"></script>
+    <script src="/templates/jhct/js/bootstrap.min.js"></script>
+    <script src="/templates/jhct/js/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="/templates/HandCode/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="/templates/jhct/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
