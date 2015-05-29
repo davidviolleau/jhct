@@ -9,11 +9,7 @@ defined('_JEXEC') or die;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-
-    <title>Theme Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/templates/jhct/css/bootstrap.min.css" rel="stylesheet">
@@ -46,7 +42,7 @@ defined('_JEXEC') or die;
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">Logo CPT</a>
+          <a class="navbar-brand" href="/"><img src="../templates/jhct/img/logo.png"/></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <jdoc:include type="modules" name="menu" style="none" />
@@ -55,9 +51,6 @@ defined('_JEXEC') or die;
     </nav>
 
     <div class="container theme-showcase" role="main">
-	<div class="page-header">
-        <h1>Carousel</h1>
-      </div>
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
