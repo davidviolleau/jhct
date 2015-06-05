@@ -1,18 +1,13 @@
-body {
-  padding-top: 0px;
-  padding-bottom: 30px;
-}
+.nav {
+		margin-top:5px;
+	}
 
-.theme-dropdown .dropdown-menu {
-  position: static;
-  display: block;
-  margin-bottom: 20px;
-}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 500px) { 
 
-.theme-showcase > p > .btn {
-  margin: 5px 0;
-}
+	.nav {
+		margin-top:30px;
+		font-size: 20px;
+	}
 
-.theme-showcase .navbar .container {
-  width: auto;
 }
