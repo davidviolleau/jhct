@@ -1,13 +1,3 @@
 .nav {
-		margin-top:5px;
-	}
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 500px) { 
-
-	.nav {
-		margin-top:30px;
 		font-size: 20px;
 	}
-
-}

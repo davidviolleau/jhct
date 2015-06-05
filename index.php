@@ -26,13 +26,27 @@ defined('_JEXEC') or die;
 <![endif]-->
 </head>
 <body role="document">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+		<a class="navbar-brand" href="/"><img src="../templates/jhct/img/logo.png"/></a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <jdoc:include type="modules" name="menu" style="none" />
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 	<div class="container theme-showcase" role="main">
-		<div class="header clearfix">
-			<nav>
-			  <jdoc:include type="modules" name="menu" style="none" />
-			</nav>
-			<a href="/"><img src="../templates/jhct/img/logo.png"/></a>
-		</div>
+
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
 				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
