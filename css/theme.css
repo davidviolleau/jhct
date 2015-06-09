@@ -10,7 +10,10 @@ body{
 .navbar-default {
 	border-bottom: 2px solid #7c9fcc;
 }
-.nav {
-		font-size: 20px;
-		padding-top: 20px;
-	}
+
+@media (min-width: 768px) {
+	.nav {
+			font-size: 20px;
+			padding-top: 20px;
+		}
+ }
