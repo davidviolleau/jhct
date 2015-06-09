@@ -1,3 +1,16 @@
+/* Background */
+body{
+    background-image: url('../img/bkg-left.png'), url('../img/bkg-right.png'), url('../img/bkg-main2.png');
+    background-position: 0px 130px, 100% 130px, center top;
+    background-repeat: no-repeat, no-repeat, repeat;
+    height: 100%;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.navbar-default {
+	border-bottom: 2px solid #7c9fcc;
+}
 .nav {
 		font-size: 20px;
+		padding-top: 20px;
 	}
