@@ -55,7 +55,7 @@ defined('_JEXEC') or die;
 			</ol>
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
-					<img data-src="holder.js/1140x500/auto/#777:#555/text:First slide" alt="First slide">
+					<jdoc:include type="modules" name="position-1" style="none" />
 				</div>
 				<div class="item">
 					<img data-src="holder.js/1140x500/auto/#666:#444/text:Second slide" alt="Second slide">
