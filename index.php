@@ -47,20 +47,15 @@ defined('_JEXEC') or die;
     </nav>
 	<div class="container theme-showcase" role="main">
 		<jdoc:include type="modules" name="carousel" style="none" />
-      <!-- Example row of columns -->
+      
       <div class="row">
-        <div class="col-md-6" style="padding: 15px;">
-          <img src="/images/quad/quad1.jpg" width="100%">
-        </div>
-		<div class="col-md-6" style="padding: 15px;">
-          <img src="/images/quad/quad2.jpg" width="100%">
-        </div>
-		<div class="col-md-6" style="padding: 15px;">
-          <img src="/images/quad/quad3.jpg" width="100%">
-        </div>
-		<div class="col-md-6" style="padding: 15px;">
-          <img src="/images/quad/quad4.jpg" width="100%">
-        </div>
+        <jdoc:include type="modules" name="row-1" style="none" />
+      </div>
+	  <div class="row">
+        <jdoc:include type="modules" name="row-2" style="none" />
+      </div>
+	  <div class="row">
+        <jdoc:include type="modules" name="row-3" style="none" />
       </div>
 		<!-- Main jumbotron for a primary marketing message or call to action -->
 		<div class="jumbotron">

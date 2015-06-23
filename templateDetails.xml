@@ -21,6 +21,9 @@
 				<position>right</position>
 				<position>left</position>
 				<position>carousel</position>
+				<position>row-1</position>
+				<position>row-2</position>
+				<position>row-3</position>
 				<position>position-1</position>
 				<position>position-2</position>
 				<position>position-3</position>
