@@ -13,7 +13,7 @@
                 <filename>index.php</filename>
 				<folder>css</folder>
 				<folder>js</folder>
-				<folder>images</folder>
+				<folder>img</folder>
         </files>
         <positions>
 				<position>debug</position>
