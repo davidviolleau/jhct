@@ -15,12 +15,20 @@ defined('_JEXEC') or die;
 	
 </head>
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
-<?php include_once("analyticstracking.php") ?>
+<?php /*include_once("analyticstracking.php")*/ ?>
 <!-- NAVBAR
 ================================================== -->
 <div class="navbar-wrapper">
 	<!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
 	<div class="container">
+		<div class="logo navbar">
+			<div class="navbar-inner">
+				<a href="<?php echo $this->baseurl ?>">
+					<img src="./templates/jhctbootstrap23/img/fermedelafutaie_transp.png">
+					<h3>Ferme de la Futaie</h3>
+				</a>
+			</div>
+		</div>
 		<div class="navbar">
 			<div class="navbar-inner">
 				<!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
@@ -29,9 +37,9 @@ defined('_JEXEC') or die;
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="brand" href="/">Trent & Tara</a>
+				<a class="brand" href="<?php echo $this->baseurl ?>">Ferme de la Futaie</a>
 				<!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
-				<div class="nav-collapse collapse">
+				<div class="nav-collapse collapse">				
 					<jdoc:include type="modules" name="menu" style="none" />
 				</div><!--/.nav-collapse -->
 			</div><!-- /.navbar-inner -->
