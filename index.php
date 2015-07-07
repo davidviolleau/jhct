@@ -7,9 +7,9 @@ defined('_JEXEC') or die;
 	<jdoc:include type="head" />
 	<? JHtml::_('bootstrap.framework') ?>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="/templates/jhct/css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<link href="/templates/jhct/css/bootstrap-responsive.min.css" rel="stylesheet">
-	<link href="/templates/jhct/css/style.css" rel="stylesheet">
+	<link href="./templates/jhctbootstrap23/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="./templates/jhctbootstrap23/css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="./templates/jhctbootstrap23/css/style.css" rel="stylesheet">
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Federo" rel="stylesheet" type="text/css">
 	
@@ -43,37 +43,37 @@ defined('_JEXEC') or die;
 <div id="myCarousel" class="carousel slide">
 	<div class="carousel-inner">
 		<div class="car item">
-			<img src="../templates/jhct/img/slide-01.jpg" alt="" class="carouselimg">
+			<img src="./templates/jhctbootstrap23/img/slide-01.jpg" alt="" class="carouselimg">
 		</div>
 		<div class="car item">
-			<img src="../templates/jhct/img/slide-02.jpg" alt="" class="carouselimg">
+			<img src="./templates/jhctbootstrap23/img/slide-02.jpg" alt="" class="carouselimg">
 		</div>
 		<div class="car item">
-			<img src="../templates/jhct/img/slide-03.jpg" alt="" class="carouselimg">
+			<img src="./templates/jhctbootstrap23/img/slide-03.jpg" alt="" class="carouselimg">
 		</div>
 		<div class="car item">
-			<img src="../templates/jhct/img/slide-04.jpg" alt="" class="carouselimg">
+			<img src="./templates/jhctbootstrap23/img/slide-04.jpg" alt="" class="carouselimg">
 		</div>
 		<div class="car item">
-			<img src="../templates/jhct/img/slide-06.jpg" alt="" class="carouselimg">
+			<img src="./templates/jhctbootstrap23/img/slide-06.jpg" alt="" class="carouselimg">
 		</div>
 		<div class="car item">
-			<img src="../templates/jhct/img/slide-07.jpg" alt="" class="carouselimg">
+			<img src="./templates/jhctbootstrap23/img/slide-07.jpg" alt="" class="carouselimg">
 		</div>
 		<div class="car item">
-			<img src="../templates/jhct/img/slide-08.jpg" alt="" class="carouselimg">
+			<img src="./templates/jhctbootstrap23/img/slide-08.jpg" alt="" class="carouselimg">
 		</div>
 		<div class="car item">
-			<img src="../templates/jhct/img/slide-09.jpg" alt="" class="carouselimg">
+			<img src="./templates/jhctbootstrap23/img/slide-09.jpg" alt="" class="carouselimg">
 		</div>
 		<div class="car item">
-			<img src="../templates/jhct/img/slide-10.jpg" alt="" class="carouselimg">
+			<img src="./templates/jhctbootstrap23/img/slide-10.jpg" alt="" class="carouselimg">
 		</div>
 		<div class="car item">
-			<img src="../templates/jhct/img/slide-11.jpg" alt="" class="carouselimg">
+			<img src="./templates/jhctbootstrap23/img/slide-11.jpg" alt="" class="carouselimg">
 		</div>
 		<div class="car item">
-			<img src="../templates/jhct/img/slide-12.jpg" alt="" class="carouselimg">
+			<img src="./templates/jhctbootstrap23/img/slide-12.jpg" alt="" class="carouselimg">
 		</div>
 	</div>
 </div><!-- /.carousel -->
