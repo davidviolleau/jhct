@@ -48,6 +48,9 @@ input, textarea, .uneditable-input {
 }
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
+.header-wrapper {
+	position: relative;
+}
 .nav {
 	font-family: 'Federo';
 	font-size:1.15em;
@@ -55,26 +58,28 @@ input, textarea, .uneditable-input {
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
 	position: absolute;
-	top: 0;
+	bottom: 0;
 	left: 0;
 	right: 0;
 	z-index: 10;
 	margin-top: 20px;
 }
-/* Remove border, change up box shadow for more contrast and add padding-left for logo */
-.navbar .navbar-inner {
+/* Remove border, change up box shadow for more contrast */
+.navbar-inner {
+	display: inline-block;
 	border: 0;
 	-webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
 	-moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
 	box-shadow: 0 2px 10px rgba(0,0,0,.25);
-	padding-left: 85px;
 }
 /* Downsize the brand/project name a bit */
 .navbar .brand {
 	padding: 7px 20px 7px; /* Increase vertical padding to match navbar links */
 	font-family: 'Federo';
-	text-shadow: 0 -1px 0 rgba(0,0,0,.5);
 	color: #80AA00;
+	font-size: 24.5px;
+	font-weight: bold;
+	text-rendering: optimizelegibility;
 }
 /* Navbar links: increase padding for taller navbar */
 .navbar .nav > li > a {
@@ -85,16 +90,15 @@ input, textarea, .uneditable-input {
 	margin: 2px 0px;
 }
 .logo {
-	position: absolute;
+	display: inline-block;
 }
 .logo .navbar-inner {
-	padding-left: 20px;
-}
-.logo .navbar-inner a {
+	padding-left: 10px;
+	padding-right: 10px;
 	text-align: center;
 }
 .logo .navbar-inner img {
-	width: 200px;
+	width: 175px;
 	padding-top: 10px;
 }
 .logo .navbar-inner h3 {
@@ -210,31 +214,47 @@ div.boxxy, #login-form {
 @media (min-width: 1200px) {
 	.bs-docs-sidenav {
 		width:170px;
-	}	
+	}
 }
-@media (max-width: 979px) {
+@media (max-width: 1199px) {
 	.container.navbar-wrapper {
 		margin-bottom: 0;
 		width: auto;
 	}
-	.navbar-inner {
-		border-radius: 0;
-		margin: -20px 0;
-	}
 	.bs-docs-sidenav {
-		width:104px;
+		width:0px;
 	}
-	.logo {
+	.logo img {
 		display:none;
 	}
 	/* Reduce padding-left when logo is not displayed */
 	.navbar .navbar-inner {
 		padding-left: 20px;
+		padding-right: 20px;
 	}
 }
-@media (max-width: 767px) {
+@media (min-width: 980px) {
+	.navbar  .brand {
+		display:none;
+	}
+}
+@media (max-width: 979px) {
+	.logo {
+		display:none;
+	}
+	.header-wrapper {
+		position: initial;
+	}
+	.navbar-wrapper {
+		top: 0;
+	}
+	.navbar-wrapper .container {
+		width: 100%;
+	}
 	.navbar-inner {
+		display: block;
 		margin: -20px 0;
+		border-radius: 0;
 	}
 	#mainwrap {
 		margin-top: 40px;
