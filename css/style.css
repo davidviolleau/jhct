@@ -175,22 +175,15 @@ div.boxxy, #login-form {
  #login-form {
 	padding-top: 10px;
 }
-.items-row {
-	margin: 10px 0px 0px 0px;
-	padding:0px 0px 10px 0px;
-	background-color:#fff;
-	border-radius:10px;
-	border: 0px solid #aaa;
-}
-.item-page {
-	margin: 10px 0px 0px 0px;
+.item-page, div[class^="leading-"] {
+	margin: 0px 0px 20px 0px;
 	padding:0px 10px 10px 10px;
 	background-color:#fff;
 	border-radius:10px;
 	border: 0px solid #aaa;
 }
-.items-row .item {
-	padding:0px 10px 0px 10px;
+.items-leading .leading-0 {
+	margin-top: 0px;
 }
 .aboutinfo {
 	padding:5px 10px 10px 10px;
@@ -198,16 +191,17 @@ div.boxxy, #login-form {
 #aboutus {
 	margin:0;
 }
-.row-0 {
-	margin-top: 0px;
-}
 .page-header{
 	margin:0px;
 	padding:0px;
 	border:0px;
 }
+.page-header h2 {
+	padding-top: 10px;
+	margin-top: 0px;
+}
 .article-info-term, .icon-calendar {
-    display: none;													Details							</dt>
+    display: none;
 }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
