@@ -52,36 +52,11 @@ defined('_JEXEC') or die;
 	================================================== -->
 	<div id="myCarousel" class="carousel slide">
 		<div class="carousel-inner">
+<? for ($x = 1; $x <= 15; $x++) { ?>	
 			<div class="car item">
-				<img src="./templates/jhctbootstrap23/img/slide-01.jpg" alt="" class="carouselimg">
-			</div>
-			<div class="car item">
-				<img src="./templates/jhctbootstrap23/img/slide-02.jpg" alt="" class="carouselimg">
-			</div>
-			<div class="car item">
-				<img src="./templates/jhctbootstrap23/img/slide-03.jpg" alt="" class="carouselimg">
-			</div>
-			<div class="car item">
-				<img src="./templates/jhctbootstrap23/img/slide-04.jpg" alt="" class="carouselimg">
-			</div>
-			<div class="car item">
-				<img src="./templates/jhctbootstrap23/img/slide-05.jpg" alt="" class="carouselimg">
-			</div>		
-			<div class="car item">
-				<img src="./templates/jhctbootstrap23/img/slide-06.jpg" alt="" class="carouselimg">
-			</div>
-			<div class="car item">
-				<img src="./templates/jhctbootstrap23/img/slide-07.jpg" alt="" class="carouselimg">
-			</div>
-			<div class="car item">
-				<img src="./templates/jhctbootstrap23/img/slide-08.jpg" alt="" class="carouselimg">
-			</div>
-			<div class="car item">
-				<img src="./templates/jhctbootstrap23/img/slide-09.jpg" alt="" class="carouselimg">
-			</div>
-			<div class="car item">
-				<img src="./templates/jhctbootstrap23/img/slide-10.jpg" alt="" class="carouselimg">
-			</div>
+				<img src="./templates/jhctbootstrap23/img/slide-<?echo sprintf("%02d", $x);?>.jpg" alt="" class="carouselimg">
+			</div>			
+<? } ?>
 		</div>
 	</div><!-- /.carousel -->
 </div><!-- /.header-wrapper -->
