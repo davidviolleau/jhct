@@ -21,20 +21,48 @@ p img {
 a:link, a:visited , a:hover, a:active {
 	color: #5B8231;
 }
+/* CONTACTS LIST
+-------------------------------------------------- */
+.contact-category .category-desc {
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.contact-category ul.category {
+	list-style-type: none;
+	max-width: 700px;
+    margin: auto;
+}
+.contact-category ul.category li {
+	margin-bottom: 20px;
+	padding:10px;
+	background-color:#fff;
+	border-radius:10px;
+	border: 0px solid #aaa;
+}
+.contact-category ul.category li .pull-right {
+	margin-top: 5px;
+    line-height: 30px;
+}
+.contact-category ul.category li .list-title {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.contact-category ul.category li span[id^="cloak"] {
+	display: block;
+	margin-top: 10px;
+}
+
 /* CONTACT FORM
 -------------------------------------------------- */
-.contact-responsive h3, legend{
-	display:none;
+.contact {
+	margin: 10px;
 }
-.contact-form {
-	margin-top:-40px;
+.contact-form legend{
+	font-size: 1em;
+    line-height: normal;
 }
-.form-horizontal .controls {
-	margin-left: 100px;
-}
-.form-horizontal .control-label {
-	width: 80px;
-}
+
 input, textarea, .uneditable-input {
 	width: 90%;
 }
@@ -42,7 +70,7 @@ input, textarea, .uneditable-input {
 	padding:0;
 	background:none;
 	position:relative;
-	left:45%;
+	left:50%;
 	margin-top:-20px;
 	width:100px;
 }
