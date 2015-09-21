@@ -2,13 +2,13 @@
 <extension version="3.0" type="template">
         <name>jhctbootstrap23</name>
         <creationDate>2013-04-12</creationDate>
-        <author>Trent</author>
-        <authorEmail>trent_03@msn.com</authorEmail>
-        <authorUrl>http://www.trentandtara.com</authorUrl>
-        <copyright>Trent 2013</copyright>
+        <author>David</author>
+        <authorEmail></authorEmail>
+        <authorUrl></authorUrl>
+        <copyright></copyright>
         <license>GNU/GPL</license>
         <version>1.0.0</version>
-        <description>My Hand Code Template</description>
+        <description>My Hand Code Template for fermedelafutaie</description>
         <files>
                 <filename>index.php</filename>
 				<folder>css</folder>
