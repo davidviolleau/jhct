@@ -163,6 +163,22 @@ input, textarea, .uneditable-input {
 	-moz-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
 	box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
 }
+ /* IMAGES IN BLOG POST
+-------------------------------------------------- */
+.blog div[class^="leading-"] > p > img{
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	max-width: 100%;
+}
+
+.blog div[class^="leading-"]:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
  /* RANDOM STYLING AND FIXES
 -------------------------------------------------- */
 div.boxxy, #login-form {
