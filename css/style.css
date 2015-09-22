@@ -249,12 +249,12 @@ div.boxxy, #login-form {
 }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
 	.bs-docs-sidenav {
 		width:170px;
 	}
 }
-@media (max-width: 1199px) {
+@media (max-width: 1023px) {
 	.container.navbar-wrapper {
 		margin-bottom: 0;
 		width: auto;
